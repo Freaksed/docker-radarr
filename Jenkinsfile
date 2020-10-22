@@ -17,13 +17,13 @@ pipeline {
     GITLAB_TOKEN=credentials('b6f0f1dd-6952-4cf6-95d1-9c06380283f0')
     GITLAB_NAMESPACE=credentials('gitlab-namespace-id')
     EXT_GIT_BRANCH = 'master'
-    EXT_USER = 'Radarr'
+    EXT_USER = 'Freaksed'
     EXT_REPO = 'Radarr'
     BUILD_VERSION_ARG = 'RADARR_RELEASE'
-    LS_USER = 'linuxserver'
+    LS_USER = 'freaksed'
     LS_REPO = 'docker-radarr'
     CONTAINER_NAME = 'radarr'
-    DOCKERHUB_IMAGE = 'linuxserver/radarr'
+    DOCKERHUB_IMAGE = 'freaksed/radarr'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/radarr'
     PR_DOCKERHUB_IMAGE = 'lspipepr/radarr'
     DIST_IMAGE = 'ubuntu'
@@ -303,7 +303,7 @@ pipeline {
         -d '{"namespace_id":'${GITLAB_NAMESPACE}',\
              "name":"'${LS_REPO}'",
              "mirror":true,\
-             "import_url":"https://github.com/linuxserver/'${LS_REPO}'.git",\
+             "import_url":"https://github.com/Freaksed/'${LS_REPO}'.git",\
              "issues_access_level":"disabled",\
              "merge_requests_access_level":"disabled",\
              "repository_access_level":"enabled",\

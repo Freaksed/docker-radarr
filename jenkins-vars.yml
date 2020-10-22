@@ -8,13 +8,13 @@ release_tag: latest
 ls_branch: master
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
-  - EXT_USER = 'Radarr'
+  - EXT_USER = 'Freaksed'
   - EXT_REPO = 'Radarr'
   - BUILD_VERSION_ARG = 'RADARR_RELEASE'
-  - LS_USER = 'linuxserver'
+  - LS_USER = 'freaksed'
   - LS_REPO = 'docker-radarr'
   - CONTAINER_NAME = 'radarr'
-  - DOCKERHUB_IMAGE = 'linuxserver/radarr'
+  - DOCKERHUB_IMAGE = 'freaksed/radarr'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/radarr'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/radarr'
   - DIST_IMAGE = 'ubuntu'
