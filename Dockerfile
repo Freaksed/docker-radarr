@@ -18,11 +18,14 @@ RUN \
 	jq && \
  echo "**** install radarr ****" && \
  if [ -z ${RADARR_RELEASE+x} ]; then \
+ 	echo "getting tags" \
 	RADARR_RELEASE=$(curl -sX GET "https://api.github.com/repos/Freaksed/Radarr/releases" \
 	| jq -r '.[0] | .tag_name'); \
  fi && \
+ echo "using ${RADARR_RELEASE}" \
  radarr_url=$(curl -s https://api.github.com/repos/Freaksed/Radarr/releases/tags/"${RADARR_RELEASE}" \
 	|jq -r '.assets[].browser_download_url' |grep linux) && \
+ echo "url ${radarr_url}" \
  mkdir -p \
 	/app/radarr/bin && \
  curl -o \
